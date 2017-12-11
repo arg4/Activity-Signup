@@ -1,0 +1,15 @@
+{% macro render_field(field) %}
+<div class="form-group" >
+    <div class="col-12">
+        {% if field.errors %}
+        <span class="error">
+            {% for error in field.errors %}
+            {{ error }}
+            {% endfor %}
+        </span>
+        {% endif %}
+    </div>
+    <label class="col-2 col-form-label">{{ field.label }}</label>
+    <div class="col-10"> {{ field(**kwargs)|safe }}</div>
+</div>
+{% endmacro %}
