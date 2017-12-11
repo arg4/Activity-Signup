@@ -2,6 +2,9 @@
 Simple Flask application that adds an employee to a list along with their chosen activity
 
 ## Instructions
+This application was build using flask, you should use a virtual environment to run it, after installing all the packages in `requirements.txt` with pip and updating the values in `instance/flask.cfg` run the application in the root directory with `python run.py`.
+
+
 Replace values in `instance/flask.cfg` with relevant values
 ```python
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
